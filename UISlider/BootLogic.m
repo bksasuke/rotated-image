@@ -16,17 +16,10 @@
     MainScreen* mainScreen = [[MainScreen alloc] initWithStyle:UITableViewStyleGrouped];
     //--------- From this line, please customize your menu data -----------
     NSDictionary* basic = @{SECTION: @"Basic", MENU: @[
-                                    @{TITLE: @"UISlider", CLASS: @"DemoSlider"},
-                                    @{TITLE: @"Selector", CLASS: @"DemoSelector"}]};
-    NSDictionary* intermediate = @{SECTION: @"Intermediate", MENU: @[
-                                    @{TITLE: @"Array", CLASS: @"InterB"},
-                                    @{TITLE: @"Dictionary", CLASS: @"Dictionary"}]};
-    NSDictionary* advanced = @{SECTION: @"Advanced", MENU: @[
-                                    @{TITLE: @"Advanced C", CLASS: @"AdvancedC"}
-                             ]};
+                                    @{TITLE: @"Skew a photo", CLASS: @"DemoSlider"}]};
     
-    mainScreen.menu = @[basic, intermediate, advanced];
-    mainScreen.title = @"Obj-C by Exp";
+    mainScreen.menu = @[basic ];
+    mainScreen.title = @"Obj-C via Examples";
     mainScreen.about = @"Created by Student";
     //--------- End of customization -----------
     UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController: mainScreen];
